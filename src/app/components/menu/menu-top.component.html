@@ -1,0 +1,17 @@
+<div class="navbar-header">
+  <div class="flex">
+    <div class="navbar-brand-box hidden md:block">
+      <button
+        mat-icon-button
+        color="accent"
+        (click)="selecciono.emit(collapsed = !collapsed)"
+      >
+        <mat-icon >menu</mat-icon>
+      </button>
+    </div>
+    <div class="dropdown-mega d-none d-lg-block ms-2 dropdown"></div>
+    <button type="button" mat-button (click)="clickMenu()" class="menuToggle">
+      Toggle sidenavr
+    </button>
+  </div>
+</div>

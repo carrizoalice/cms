@@ -9,6 +9,19 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
+    "strictPropertyInitialization": false,
+    "paths": {
+      "@cms/model": [
+        "./libs/model/src/index.ts"
+      ],
+      "@libs/ui": [
+        // "./libs/commondist/libs/ui/src/index.ts"
+        "./libs/ui/src/index.ts"
+      ],
+      "@material": [
+        "./libs/common/material/src/index.ts"
+      ]
+    },
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,

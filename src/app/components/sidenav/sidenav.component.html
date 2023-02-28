@@ -1,0 +1,15 @@
+<div class="app-sidenav flex flex-col">
+  <div [ngClass]="{'nav': !collapsed , 'nav-collapsed': collapsed}">
+    <span class="flex flex-row items-center"
+    ><img class="mr-3.5" src="assets/img/logo-proyect.png" alt="Logo proyecto" />
+    <p class="m-0">PROJECT CMS</p></span
+  >
+  <hr>
+  <ul>
+    <li class="flex flex-row items-center" *ngFor="let nav of navData"  [routerLink]="nav.url">
+        <mat-icon aria-hidden="false" [fontIcon]="nav.icon"></mat-icon>
+        <a *ngIf="!collapsed">{{ nav.nombre | titlecase }}</a>
+    </li>
+  </ul>
+  </div>
+</div>
