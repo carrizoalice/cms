@@ -20,6 +20,10 @@
       ],
       "@material": [
         "./libs/common/material/src/index.ts"
+      ],
+      "@web-styles": [
+        // "dist/web-styles"
+        "./libs/web-styles/src/lib/cms-global.scss"
       ]
     },
     "noFallthroughCasesInSwitch": true,
