@@ -1,11 +1,11 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { CardModule } from '../components/cms-card/cms-card.module';
 import { SettingHomeComponent } from './setting-home.component';
-import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [SettingHomeComponent],
-  imports: [CommonModule],
+  imports: [CommonModule, CardModule, MatButtonModule],
   exports: [SettingHomeComponent],
 })
 export class SettingHomeModule {}
