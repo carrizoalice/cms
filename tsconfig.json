@@ -15,7 +15,6 @@
         "./libs/model/src/index.ts"
       ],
       "@libs/ui": [
-        // "./libs/commondist/libs/ui/src/index.ts"
         "./libs/ui/src/index.ts"
       ],
       "@material": [
