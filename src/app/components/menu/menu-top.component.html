@@ -4,14 +4,19 @@
       <button
         mat-icon-button
         color="accent"
-        (click)="selecciono.emit(collapsed = !collapsed)"
+        (click)="selecciono.emit((collapsed = !collapsed))"
       >
-        <mat-icon >menu</mat-icon>
+        <mat-icon>menu</mat-icon>
       </button>
     </div>
     <div class="dropdown-mega d-none d-lg-block ms-2 dropdown"></div>
-    <button type="button" mat-button (click)="clickMenu()" class="menuToggle">
-      Toggle sidenavr
-    </button>
+    <!-- <button type="button" mat-button (click)="clickMenu()">
+      Toggle sidenavre
+    </button> -->
+    <div class="md:hidden text-end">
+      <button type="button" mat-button (click)="clickMenu()">
+        Toggle sidenavre
+      </button>
+    </div>
   </div>
 </div>
