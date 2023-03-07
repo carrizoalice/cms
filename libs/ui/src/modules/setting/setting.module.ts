@@ -7,7 +7,7 @@ import { SettingRoutingModule } from './setting-routing.module';
 @NgModule({
   declarations: [SettingHomePageComponent],
   imports: [CommonModule, SettingRoutingModule, SettingHomeModule],
-  exports: [],
-  providers: [SettingHomePageComponent],
+  exports: [SettingHomePageComponent],
+  providers: [],
 })
 export class SettingModule {}
