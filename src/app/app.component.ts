@@ -30,9 +30,9 @@ export class AppComponent implements OnInit {
       apellido: 'Carris',
     }
 
-    this.sidenavService.sideNavToggleSubject.subscribe(()=> {
-      this.sidenav.toggle();
-    });
+    // this.sidenavService.sideNavToggleSubject.subscribe(()=> {
+    //   this.sidenav.toggle();
+    // });
 
     this.screenService.isBelowMd().subscribe((isBelowMd: BreakpointState) => {
       this.isBelowMd = isBelowMd.matches;
