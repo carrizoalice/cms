@@ -19,4 +19,26 @@
       </button>
     </div>
   </div>
+  <div>
+    <span
+      mat-icon-button
+      [matMenuTriggerFor]="menu"
+      aria-label="Example icon-button with a menu"
+      class="flex flex-row items-center justify-center cursor-pointer"
+    >
+    <cms-avatar photo="https://material.angular.io/assets/img/examples/shiba1.jpg" class="mr-2"></cms-avatar>
+    <p class="text-xs">Celebrando Fiestas</p>
+
+  </span>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>person</mat-icon>
+        <span>Perfil</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>logout</mat-icon>
+        <span>Cerrar</span>
+      </button>
+    </mat-menu>
+  </div>
 </div>
