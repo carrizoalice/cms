@@ -3,7 +3,7 @@ import { Nav } from "@cms/model";
 export const navData: Nav[] = [
     {
         nombre: 'home',
-        url: '/home',
+        url: '',
         icon: 'home'
     },
     {

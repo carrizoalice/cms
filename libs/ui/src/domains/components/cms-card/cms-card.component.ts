@@ -8,5 +8,5 @@ export class CmsCardComponent {
   @Input() title: string;
   @Input() subtitle: string;
   @Input() textContent: string;
-  @Input() alignbtns: string;
+  @Input() contenidoactions: boolean;
 }
