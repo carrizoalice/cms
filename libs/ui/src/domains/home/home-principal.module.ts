@@ -5,6 +5,7 @@ import { MatTableModule } from '@angular/material/table';
 import { CardModule } from '../components/cms-card/cms-card.module';
 import { HomeComponent } from './home.component';
 import { MatChipsModule } from '@angular/material/chips';
+import { NgApexchartsModule } from 'ng-apexcharts';
 @NgModule({
   declarations: [HomeComponent],
   imports: [
@@ -13,6 +14,7 @@ import { MatChipsModule } from '@angular/material/chips';
     MatButtonModule,
     MatTableModule,
     MatChipsModule,
+    NgApexchartsModule,
   ],
   exports: [HomeComponent],
 })

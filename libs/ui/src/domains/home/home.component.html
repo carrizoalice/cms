@@ -26,6 +26,31 @@
       </mat-chip-set>
     </div>
   </cms-card>
+  <cms-card [contenidoactions]="false" title="Porcentaje de ventas" subtitle="Últimos 9 meses">
+    <div contenidocard class="p-5 ">
+      <apx-chart
+      [series]="chartOptions.series"
+      [chart]="chartOptions.chart"
+      [xaxis]="chartOptions.xaxis"
+      ></apx-chart>
+    </div>
+  </cms-card>
+  <cms-card [contenidoactions]="false">
+    <div contenidocard class="p-5 ">
+      <apx-chart
+      [series]="chartOptionsDos.series"
+      [chart]="chartOptionsDos.chart"
+      [labels]="chartOptionsDos.labels"
+      [fill]="chartOptionsDos.fill"
+      [stroke]="chartOptionsDos.stroke"
+      [title]="chartOptionsDos.title"
+      ></apx-chart>
+    </div>
+  </cms-card>
 </div>
+
+
+
+
 
 
