@@ -6,7 +6,8 @@
         color="accent"
         (click)="selecciono.emit((collapsed = !collapsed))"
       >
-        <mat-icon>menu</mat-icon>
+        <mat-icon *ngIf="!collapsed">menu</mat-icon>
+        <mat-icon *ngIf="collapsed">close</mat-icon>
       </button>
     </div>
     <div class="dropdown-mega d-none d-lg-block ms-2 dropdown"></div>
