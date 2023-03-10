@@ -1,5 +1,5 @@
-<div class="grid xl:grid-cols-2 lg:grid-cols-1 gap-3">
-  <cms-card [contenidoactions]="false">
+<div class="grid xl:grid-cols-3 lg:grid-cols-1 gap-3 items-stretch">
+  <cms-card [contenidoactions]="false" class="xl:col-span-2 lg:col-span-1 flex h-full">
     <div contenidocard class="grid lg:grid-cols-2 md:grid-cols-1 flex-wrap gap-3 items-center p-5">
       <div>
         <h1>¡Bienvenido Celebrando Fiestas!</h1>
@@ -11,7 +11,7 @@
       <div><img src="assets/img/home_dashboard.png" alt="" /></div>
     </div>
   </cms-card>
-  <cms-card [contenidoactions]="false">
+  <!-- <cms-card [contenidoactions]="false">
     <div contenidocard class="p-5">
         <mat-chip-set
         class="example-chip"
@@ -25,16 +25,7 @@
         </mat-chip>
       </mat-chip-set>
     </div>
-  </cms-card>
-  <cms-card [contenidoactions]="false" title="Porcentaje de ventas" subtitle="Últimos 9 meses">
-    <div contenidocard class="p-5 ">
-      <apx-chart
-      [series]="chartOptions.series"
-      [chart]="chartOptions.chart"
-      [xaxis]="chartOptions.xaxis"
-      ></apx-chart>
-    </div>
-  </cms-card>
+  </cms-card> -->
   <cms-card [contenidoactions]="false">
     <div contenidocard class="p-5 ">
       <apx-chart
@@ -47,8 +38,17 @@
       ></apx-chart>
     </div>
   </cms-card>
-</div>
+  <cms-card [contenidoactions]="false" title="Porcentaje de ventas" subtitle="Últimos 9 meses" class="col-span-3">
+    <div contenidocard class="p-5">
+      <apx-chart
+      [series]="chartOptions.series"
+      [chart]="chartOptions.chart"
+      [xaxis]="chartOptions.xaxis"
+      ></apx-chart>
+    </div>
+  </cms-card>
 
+</div>
 
 
 
