@@ -263,7 +263,8 @@
               "libs/authentication/src/assets"
             ],
             "styles": [
-              "libs/authentication/src/styles2.scss"
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+              "libs/authentication/src/styles.scss"
             ],
             "scripts": []
           },
@@ -326,7 +327,8 @@
               "libs/authentication/src/assets"
             ],
             "styles": [
-              "libs/authentication/src/styles2.scss"
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+              "libs/authentication/src/styles.scss"
             ],
             "scripts": []
           }
