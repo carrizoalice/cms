@@ -263,7 +263,7 @@
               "libs/authentication/src/assets"
             ],
             "styles": [
-              "libs/authentication/src/styles.scss"
+              "libs/authentication/src/styles2.scss"
             ],
             "scripts": []
           },
@@ -326,7 +326,7 @@
               "libs/authentication/src/assets"
             ],
             "styles": [
-              "libs/authentication/src/styles.scss"
+              "libs/authentication/src/styles2.scss"
             ],
             "scripts": []
           }
@@ -430,6 +430,5 @@
         }
       }
     }
-  },
-  "defaultProject": "authentication"
+  }
 }
