@@ -8,8 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "cms": "ng serve",
-    "auth": "ng serve --project=\"authentication\" --port 4200",
-    "admin": "ng serve --project=\"admin\" --port 4201"
+    "auth": "ng serve --project=\"authentication\" --port 4201",
+    "admin": "ng serve --project=\"admin\" --port 4202"
   },
   "private": true,
   "dependencies": {
