@@ -4,3 +4,8 @@
   border: none;
   box-shadow: 0 0 10px 0 rgb(183 192 206 / 20%);
 }
+
+//elimina el borde que ocasiona issue con tailwind base
+.mat-mdc-form-field.mat-mdc-form-field.mat-mdc-form-field.mat-mdc-form-field.mat-mdc-form-field .mdc-notched-outline__notch {
+  border-right-style: hidden;
+}

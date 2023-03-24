@@ -11,6 +11,9 @@
     "noImplicitReturns": true,
     "strictPropertyInitialization": false,
     "paths": {
+      // "@angular/*": [
+      //   "./node_modules/@angular/*"
+      // ],
       "@cms/model": [
         "./libs/model/src/index.ts"
       ],

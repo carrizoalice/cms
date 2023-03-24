@@ -8,6 +8,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { BrowserModule } from '@angular/platform-browser';
 import { LoginComponent } from './login.component';
 import { MatInputModule } from '@angular/material/input';
+
+import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [LoginComponent],
   imports: [
@@ -20,6 +22,7 @@ import { MatInputModule } from '@angular/material/input';
     MatSidenavModule,
     MatFormFieldModule,
     MatSelectModule,
+    MatButtonModule
   ],
   exports: [LoginComponent],
 })
