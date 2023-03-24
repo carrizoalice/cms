@@ -1,1 +1,33 @@
-login
+<div
+  class="grid grid-cols-2 flex-wrap gap-3 items-center"
+  style="min-height: 100vh"
+>
+  <div class="justify-center md:flex hidden">
+    <img src="assets/img/home_dashboard.png" alt="" />
+  </div>
+  <div>
+    <h1
+      class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
+    >
+      Bienvenidos a <span class="text-blue-600 dark:text-blue-500">CMS</span>
+    </h1>
+    <h2 class="text-4xl">Iniciar sesión</h2>
+
+    <div [formGroup]="form">
+        <mat-form-field appearance="outline">
+          <mat-label>Email</mat-label>
+          <input type="email" matInput formControlName="email"  placeholder="Agregar email">
+        </mat-form-field>
+        <!-- <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <input type="password" matInput formControlName="password"  placeholder="Agregar password">
+          </mat-form-field> -->
+          <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Agregar email">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <mat-hint>Hint</mat-hint>
+          </mat-form-field>
+    </div>
+  </div>
+</div>

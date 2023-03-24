@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { MatInputModule } from '@angular/material/input';
+import { LoginModule } from './login/login.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -28,6 +29,7 @@ import { MatInputModule } from '@angular/material/input';
     MatSelectModule,
 
     MatInputModule,
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent],
