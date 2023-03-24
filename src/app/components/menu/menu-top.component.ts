@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { environment } from 'libs/admin/src/environment/environment';
 import { SideNavService } from '../sidenav/sidenav.service';
 
 @Component({
@@ -15,5 +16,10 @@ export class MenuTopComponent {
 
   clickMenu() { 
     this.sideNavService.toggle();
+  }
+
+  cerrar(){
+    console.log('hola')
+    window.location.href = environment.AUTHENTICATION_URL;
   }
 }

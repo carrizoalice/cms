@@ -12,11 +12,6 @@ const routes: Routes = [
     loadChildren: () =>
       import('../../libs/ui/src/modules/setting/setting.module').then((m) => m.SettingModule),
   },
-  {
-    path: 'login',
-    loadChildren: () =>
-      import('../../libs/authentication/src/app/login/login.module').then((m) => m.LoginModule),
-  },
   // {
   //   path: 'login',
   //   loadChildren: () =>
