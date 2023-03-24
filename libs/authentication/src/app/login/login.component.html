@@ -1,42 +1,46 @@
 <div
-  class="grid grid-cols-2 flex-wrap gap-3 items-center"
+  class="grid md:grid-cols-2 sm:grid-cols-1 flex-wrap gap-3 items-center"
   style="min-height: 100vh"
 >
   <div class="justify-center md:flex hidden">
-    <img src="assets/img/home_dashboard.png" alt="" />
+    <img src="assets/img/login.png" alt="" />
   </div>
-  <div>
+  <div class="flex-col justify-center items-center p-10 md:w-5/6">
     <h1
       class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
     >
       Bienvenidos a <span class="text-blue-600 dark:text-blue-500">CMS</span>
     </h1>
-    <h2 class="text-4xl">Iniciar sesión</h2>
+    <h2 class="text-2xl mb-4">Iniciar sesión</h2>
 
     <div [formGroup]="form">
-        <mat-form-field appearance="outline">
-          <mat-label>Email</mat-label>
-          <input type="email" matInput formControlName="email"  placeholder="Agregar email">
-        </mat-form-field>
-        <!-- <mat-form-field appearance="outline">
-            <mat-label>Password</mat-label>
-            <input type="password" matInput formControlName="password"  placeholder="Agregar password">
-          </mat-form-field> -->
-          <mat-form-field appearance="outline">
-            <mat-label>Email</mat-label>
-            <input matInput placeholder="Agregar email">
-            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-            <mat-hint>Hint</mat-hint>
-          </mat-form-field>
-
-          <div class="example-button-row">
-            <button mat-flat-button>Basic</button>
-            <button mat-flat-button color="primary">Primary</button>
-            <button mat-flat-button color="accent">Accent</button>
-            <button mat-flat-button color="warn">Warn</button>
-            <button mat-flat-button disabled>Disabled</button>
-            <a mat-flat-button href="https://www.google.com/" target="_blank">Link</a>
-          </div>
+      <mat-form-field appearance="outline" class="w-full">
+        <mat-label>Email</mat-label>
+        <input
+          type="email"
+          matInput
+          formControlName="email"
+          placeholder="Agregar email"
+        />
+        <mat-icon matSuffix>face</mat-icon>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="w-full">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" placeholder="Agregar Password" />
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        <mat-hint>La contraseña debe contener letras y números</mat-hint>
+      </mat-form-field>
+      <div class="flex justify-between mt-5">
+        <mat-checkbox class="example-margin">Recuérdame!</mat-checkbox>
+        <p><a href="">Olvidé mi password</a></p>
+      </div>
     </div>
+
+    <button mat-flat-button color="primary" class="w-full mt-5">Enviar</button>
+    <div class="text-center mt-5">
+      <p>No tienes una cuenta? Registrarse</p>
+    </div>
+
+
   </div>
 </div>
