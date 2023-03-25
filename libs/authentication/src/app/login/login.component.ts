@@ -18,5 +18,8 @@ export class LoginComponent implements OnInit{
     });
   }
 
+  ingresar(){
+    window.location.href = environment.CMS;
+  }
 
 }

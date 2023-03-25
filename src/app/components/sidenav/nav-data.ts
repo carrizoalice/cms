@@ -25,10 +25,5 @@ export const navData: Nav[] = [
         nombre: 'archivos',
         url: '/',
         icon: 'settings'
-    },
-    {
-        nombre: 'login',
-        url: '/login',
-        icon: 'settings'
     }
 ]

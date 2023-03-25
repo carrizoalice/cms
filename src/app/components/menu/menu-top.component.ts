@@ -19,7 +19,6 @@ export class MenuTopComponent {
   }
 
   cerrar(){
-    console.log('hola')
     window.location.href = environment.AUTHENTICATION_URL;
   }
 }
