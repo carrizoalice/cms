@@ -33,14 +33,14 @@ export class AppComponent implements OnInit {
 
 
 
-    // this.sidenavService.sideNavToggleSubject.subscribe(()=> {
-    //   this.sidenav.toggle();
-    // });
+    this.sidenavService.sideNavToggleSubject.subscribe(()=> {
+      this.sidenav.toggle();
+    });
 
     this.screenService.isBelowMd().subscribe((isBelowMd: BreakpointState) => {
       this.isBelowMd = isBelowMd.matches;
 
-      if (this.isBelowMd){
+      if (this.isBelowMd && this.sidenav){
         this.sidenav.toggle(false);
       }
     });

@@ -13,7 +13,7 @@ import { SideNavService } from './sidenav.service';
 })
 export class SidenavComponent implements OnInit {
   @Input() collapsed = false;
-  @ViewChild('sidenav') public sidenav: MatSidenav;
+  // @ViewChild('sidenav') public sidenav: MatSidenav;
   navData: Nav[];
 
   isMd: boolean;
@@ -26,13 +26,21 @@ export class SidenavComponent implements OnInit {
   }
   ngOnInit(): void {
 
-    // this.sideNavService.sideNavToggleSubject.subscribe(() => {
+    // this.sideNavService.sidenav$.subscribe(() => {
     //   this.sidenav.toggle();
     // });     
     
+    // this.sideNavService.createSidenav(this.sidenav);
+
     this.screenService.isBelowMd().subscribe((isBelowMd: BreakpointState) => {
       this.isMd = isBelowMd.matches;
      
     });
   }
+
+  clickMenu() { 
+    this.sideNavService.toggle();
+  }
+
+
 }

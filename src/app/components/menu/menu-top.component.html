@@ -14,11 +14,7 @@
     <!-- <button type="button" mat-button (click)="clickMenu()">
       Toggle sidenavre
     </button> -->
-    <div class="md:hidden text-end">
-      <button type="button" mat-button (click)="clickMenu()">
-        Toggle sidenavre
-      </button>
-    </div>
+
   </div>
   <div>
     <span
@@ -41,5 +37,10 @@
         <span>Cerrar</span>
       </button>
     </mat-menu>
+  </div>
+  <div class="md:hidden text-end">
+    <button type="button" mat-icon-button (click)="clickMenu()">
+      <mat-icon>menu</mat-icon>
+    </button>
   </div>
 </div>
