@@ -7,7 +7,7 @@
   <hr>
 
   <ul>
-    <li class="flex flex-row items-center" *ngFor="let nav of navData"  [routerLink]="nav.url">
+    <li class="flex flex-row items-center" *ngFor="let nav of navData"  [routerLink]="nav.url" (click)="clickMenu()">
         <mat-icon aria-hidden="false" [fontIcon]="nav.icon"></mat-icon>
         <a *ngIf="!collapsed">{{ nav.nombre | titlecase }}</a>
     </li>
