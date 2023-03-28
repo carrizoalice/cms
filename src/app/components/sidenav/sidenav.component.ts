@@ -32,6 +32,8 @@ export class SidenavComponent implements OnInit {
     
     // this.sideNavService.createSidenav(this.sidenav);
 
+    
+
     this.screenService.isBelowMd().subscribe((isBelowMd: BreakpointState) => {
       this.isMd = isBelowMd.matches;
      
